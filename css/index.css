@@ -1,4 +1,162 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+.mainButton {
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+}
+.linkStyle {
+  text-decoration: none;
+  color: black;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+button {
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid black;
+}
+.title-container h1 {
+  margin-top: 15%;
+  font-size: 55px;
+  color: whitesmoke;
+  margin-top: 50px;
+  text-align: center;
+}
+.artists-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.artists-container .artist:nth-child(1) .bio {
+  margin-top: 5%;
+  width: 50%;
+}
+.artists-container .artist:nth-child(1) a {
+  display: flex;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.artists-container img {
+  border-radius: 11px;
+  height: 350px;
+}
+.artists-container .artist:nth-child(2) .bio {
+  margin-top: 10%;
+}
+.artists-container .artist:nth-child(2) a {
+  display: flex;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+nav {
+  font-size: 25px;
+  word-spacing: 20px;
+  text-align: center;
+}
+nav a {
+  border-right: 2px solid black;
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+}
