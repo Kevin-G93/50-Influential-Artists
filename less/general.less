@@ -1,5 +1,5 @@
 button{
-    .mainButton()
+    .mainButton(100px, 35px)
 
 }
 
@@ -65,3 +65,43 @@ button{
     }
 } // end of artistcontainer
 
+@media(max-width:500px){
+    .title-container{
+       width:120%;
+      
+       
+      
+       
+    }
+    .artists-container{
+        
+        flex-direction: column;
+    text-align: center;
+       
+        .artist:nth-child(1){
+            margin-left: 10%;
+            .bio{
+                padding-bottom: 50%;
+                margin-left: 10px;
+                width: 100%;
+
+                
+            }
+            
+            a{
+                margin-left: 90px;
+            }
+           
+            }
+            .artist:nth-child(2){
+                a{
+                    margin-left: 25px;
+                    
+                }
+    }
+    
+        img{
+           .imgSize
+        }
+    }
+}
