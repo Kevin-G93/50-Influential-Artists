@@ -240,19 +240,16 @@ button {
 }
 @media (max-width: 500px) {
   .title-container {
-    width: 120%;
-  }
-  .artists-container {
-    flex-direction: column;
-    text-align: center;
+    width: 90%;
   }
   .artists-container .artist:nth-child(1) {
     margin-left: 10%;
   }
   .artists-container .artist:nth-child(1) .bio {
+    display: block;
+    text-align: center;
     padding-bottom: 50%;
-    margin-left: 10px;
-    width: 100%;
+    width: 90%;
   }
   .artists-container .artist:nth-child(1) a {
     margin-left: 90px;

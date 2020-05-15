@@ -207,14 +207,13 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
-console.log(artists[0].id)
+console.log(artists[0].name)
 console.log(artists[2].bio)
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
-
-
+artists[8].name = 'Vincent Van gogh'
+console.log(artists);
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -224,12 +223,10 @@ console.log(artists[2].bio)
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
-  for(let i=0; i<id.length; i++){
-    if(i===name){
-      return `the artist at index ${name} is ${id[i].name}`
+  
+      return `the artist at index ${name} is ${id[name].name}`
     }
-  }
-  }
+  
   console.log(getArtistByIndex(artists, 0));
   
   
@@ -245,10 +242,10 @@ function getArtistByIndex(id, name) {
  * it will remove Amedeo Modigliani from our dataset.
 */
 function removeArtist(array, indexNum) {
-    let remove = array.slice(indexNum)
-    return remove
+    let remove = array.splice(indexNum, 1)
+    return array
   }
-  console.log(removeArtist(artists, 0))
+  console.log(removeArtist(artists, 2))
   /**
 
 
@@ -257,7 +254,7 @@ function removeArtist(array, indexNum) {
 function lotsOfArt(array){
   let paintingNum = []
   for(let i = 0; i< array.length; i++){
-    if(array[i].paintings >= 100){
+    if(array[i].paintings > 100){
       paintingNum.push(array[i].name);
       
     }
@@ -278,21 +275,22 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(array){
+function addArtist(id, name, years, genre, nationality, bio){
 const newArtist = {
-  id: 21,
-  name: `Kevin Gallardo`,
-  years: `1993-2020`,
-  genre: `Web Design`,
-  nationality: `USA`,
-  bio: `lorem ipsum`
+id:id,
+  name: name,
+  years: years,
+  genre: genre,
+  nationality: nationality,
+  bio: bio
+
+
+
 }
-array.push(newArtist);
-return array;
-
-  }
-
-console.log(addArtist(artists));
+artists.push(newArtist);
+return artists;
+}
+console.log(addArtist(2,'kevn', '1993', 'genre', 'nation', 'bio11111'));
 
 
 
