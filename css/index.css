@@ -3,8 +3,7 @@
   color: black;
 }
 .imgSize {
-  width: 70%;
-  height: 70%;
+  width: 50%;
 }
 html,
 body,
@@ -94,86 +93,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-button {
-  border-radius: 5px;
-  width: 100px;
-  height: 35px;
-  font-size: 15px;
-}
-.title-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 5%;
-  border-bottom: 1px solid black;
-}
-.title-container h1 {
-  margin-top: 15%;
-  font-size: 55px;
-  color: whitesmoke;
-  margin-top: 50px;
-  text-align: center;
-}
-.artists-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.artists-container .artist:nth-child(1) .bio {
-  margin-top: 5%;
-  width: 50%;
-}
-.artists-container .artist:nth-child(1) a {
-  display: flex;
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-}
-.artists-container img {
-  border-radius: 11px;
-  height: 350px;
-}
-.artists-container .artist:nth-child(2) .bio {
-  margin-top: 10%;
-}
-.artists-container .artist:nth-child(2) a {
-  display: flex;
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-}
-@media (max-width: 500px) {
-  .title-container {
-    width: 120%;
-  }
-  .artists-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .artists-container .artist:nth-child(1) {
-    margin-left: 10%;
-  }
-  .artists-container .artist:nth-child(1) .bio {
-    padding-bottom: 50%;
-    margin-left: 10px;
-    width: 100%;
-  }
-  .artists-container .artist:nth-child(1) a {
-    margin-left: 90px;
-  }
-  .artists-container .artist:nth-child(2) a {
-    margin-left: 25px;
-  }
-  .artists-container img {
-    width: 70%;
-    height: 70%;
-  }
-}
 nav {
   font-size: 25px;
   word-spacing: 20px;
@@ -210,16 +129,24 @@ button {
 }
 .artists-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
   margin-top: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 95%;
+  border: 1px solid blue;
 }
-.artists-container .artist:nth-child(1) .bio {
-  margin-top: 5%;
+.artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
   width: 50%;
 }
-.artists-container .artist:nth-child(1) a {
+.artists-container .artist .bio {
+  margin-top: 5%;
+}
+.artists-container .artist a {
   display: flex;
   font-size: 25px;
   text-decoration: none;
@@ -228,37 +155,15 @@ button {
 .artists-container img {
   border-radius: 11px;
   height: 350px;
-}
-.artists-container .artist:nth-child(2) .bio {
-  margin-top: 10%;
-}
-.artists-container .artist:nth-child(2) a {
-  display: flex;
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
+  width: 50%;
+  align-self: center;
 }
 @media (max-width: 500px) {
-  .title-container {
-    width: 90%;
+  .artists-container {
+    display: flex;
+    flex-direction: column;
   }
-  .artists-container .artist:nth-child(1) {
-    margin-left: 10%;
-  }
-  .artists-container .artist:nth-child(1) .bio {
-    display: block;
-    text-align: center;
-    padding-bottom: 50%;
-    width: 90%;
-  }
-  .artists-container .artist:nth-child(1) a {
-    margin-left: 90px;
-  }
-  .artists-container .artist:nth-child(2) a {
-    margin-left: 25px;
-  }
-  .artists-container img {
-    width: 70%;
-    height: 70%;
+  .artists-container .artist {
+    width: 100%;
   }
 }

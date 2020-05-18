@@ -27,14 +27,23 @@ button{
 }
 .artists-container{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+    margin:auto;
+    
     margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    .artist:nth-child(1){
+    width:95%;
+    border: 1px solid blue;
+
+    .artist{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid red;
+        width: 50%;
         .bio{
             margin-top: 5%;
-            width: 50%;
+            
             
         } //end of bio
         
@@ -50,58 +59,21 @@ button{
     img{
         border-radius: 11px;
         height:350px;
+        width:50%;
+        align-self: center;
     } // end of img
 
-    .artist:nth-child(2){
-        .bio{
-            margin-top: 10%;
-        }
-        a{
-            display:flex;
-            font-size: 25px;
-            .linkStyle;
-        }
-
-    }
 } // end of artistcontainer
 
 @media(max-width:500px){
-    .title-container{
-       
-      width: 90%;
-       
-      
-       
-    }
-    .artists-container{
-        
-      
-       
-        .artist:nth-child(1){
-            margin-left: 10%;
-            .bio{
-                display:block;
-text-align: center;
-                padding-bottom: 50%;
-                width: 90%;
-
-                
-            }
-            
-            a{
-                margin-left: 90px;
-            }
-           
-            }
-            .artist:nth-child(2){
-                a{
-                    margin-left: 25px;
-                    
-                }
-    }
     
-        img{
-           .imgSize
-        }
+    
+    .artists-container{
+        display: flex;
+      flex-direction: column;
+       .artist{
+           width: 100%;
+       }
+    
     }
-}
+} // end of medioa
